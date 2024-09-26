@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Popup_Demo.App"
+             xmlns:sfPopupLayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+    
+    <Application.Resources>
+        <sfPopupLayout:SfPopupLayout x:Key="InvitationPopup">
+            <sfPopupLayout:SfPopupLayout.PopupView>
+                <sfPopupLayout:PopupView ShowHeader="False" ShowFooter="False" ShowCloseButton="False">
+                    <sfPopupLayout:PopupView.PopupStyle>
+                        <sfPopupLayout:PopupStyle 
+                            CornerRadius="0" BorderColor="Green" BorderThickness="10"/>
+                    </sfPopupLayout:PopupView.PopupStyle>
+                    <sfPopupLayout:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <StackLayout BackgroundColor="White">
+                            <Button BackgroundColor="Blue"></Button>
+                            </StackLayout>
+                            <!--<Grid RowSpacing="0" HeightRequest="300" BackgroundColor="Brown">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Label BackgroundColor="White" Text="Popup Label" Grid.Row="0"/>
+                                <Entry BackgroundColor="Yellow" Text="Popup Entry" Grid.Row="1"/>
+                                <Button Text="Popup Button" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" Grid.Row="2"/>
+                            </Grid>-->
+                        </DataTemplate>
+                    </sfPopupLayout:PopupView.ContentTemplate>
+                </sfPopupLayout:PopupView>
+            </sfPopupLayout:SfPopupLayout.PopupView>
+        </sfPopupLayout:SfPopupLayout>
+    </Application.Resources>
+</Application>
+
+
+
+
+
+
+
+
+
+
+
+
